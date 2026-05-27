@@ -74,57 +74,6 @@ const PaymentConfig = {
       ]
     },
     {
-      name: 'Stripe',
-      indexName: 'STRIPE',
-      description: '',
-      status: true,
-      isActive: true,
-      fields: [
-        {
-          name: 'Currency',
-          indexName: 'currency',
-          type: 'string',
-          value: 'INR'
-        },
-        {
-          name: 'Account Type',
-          indexName: 'accounttype',
-          type: 'string',
-          value: 'express'
-        },
-        {
-          name: 'Public Key',
-          indexName: 'publicKey',
-          type: 'string',
-          value: 'pk_test_ixS5hScmrKMXXUXcp74gQPiB00ACR7zY3J'
-        },
-        {
-          name: 'Secret Key',
-          indexName: 'secretKey',
-          type: 'string',
-          value: '766576uy6765ghuyui'
-        },
-        {
-          name: 'refreshUrl',
-          indexName: 'refreshUrl',
-          type: 'string',
-          value: '/module/payout/methods/stripe/refreshAccountLink'
-        },
-        {
-          name: 'returnUrl',
-          indexName: 'returnUrl',
-          type: 'string',
-          value: '/module/payout/methods/stripe/activateAccountLink'
-        },
-        {
-          name: 'Icon',
-          indexName: 'icon',
-          type: 'file',
-          value: 'public/payments/stripe.png'
-        }
-      ]
-    },
-    {
       name: 'Paystack',
       indexName: 'PAYSTACK',
       description: '',
