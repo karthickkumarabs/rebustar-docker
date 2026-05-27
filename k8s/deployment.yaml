@@ -22,7 +22,7 @@ spec:
 
       containers:
       - name: rebustar-api
-        image: ghcr.io/karthickkumarabs/rebustar-api:latest
+        image: ghcr.io/karthickkumarabs/rebustar-docker/rebustar-api:latest
 
         ports:
         - containerPort: 4015
