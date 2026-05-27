@@ -102,7 +102,7 @@ const PaymentConfig = {
           name: 'Secret Key',
           indexName: 'secretKey',
           type: 'string',
-          value: 'sk_test_x5Ynv6fsK5xGOvitA0zrjYhQ00QcMkErjf'
+          value: '766576uy6765ghuyui'
         },
         {
           name: 'refreshUrl',
