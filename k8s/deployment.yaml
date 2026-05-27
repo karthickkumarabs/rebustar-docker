@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: rebustar-api
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: rebustar-api
+
+  template:
+    metadata:
+      labels:
+        app: rebustar-api
+
+    spec:
+      containers:
+      - name: rebustar-api
+
+        image: ghcr.io/karthickkumarabs/rebustar-api:latest
+
+        ports:
+        - containerPort: 4015
