@@ -17,9 +17,11 @@ spec:
         app: rebustar-api
 
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
+
       containers:
       - name: rebustar-api
-
         image: ghcr.io/karthickkumarabs/rebustar-api:latest
 
         ports:
