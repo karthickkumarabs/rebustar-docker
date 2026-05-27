@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"polygon":"2dsphere"},"name":"polygon_2dsphere","2dsphereIndexVersion":{"$numberInt":"3"}}],"uuid":"2d47f4055df444918a3904467248a546","collectionName":"serviceareas","type":"collection"}

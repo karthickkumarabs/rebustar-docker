@@ -1,0 +1,60 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "prettier",
+        "google",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": [
+        "prettier",
+        "header"
+    ],
+    "overrides": [
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "allowImportExportEverywhere": true,
+        "ecmaVersion": "latest",
+        "requireConfigFile": false,
+        "babelOptions": {
+            "presets": ["@babel/preset-env"],
+            "plugins": ["@babel/plugin-syntax-import-assertions"]
+        }
+    },
+    "ignorePatterns": [
+        "AppConfig.js"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "header/header": [2, "block", [
+            " ************************",
+            " * Copyright 2023",
+            " * ABSERVETECH",
+            " ************************ "
+        ]],
+        "import/extensions": "off",
+        "allowEmptyReject": 0,
+        "new-cap": 0,
+        "no-invalid-this":0,
+        "require-jsdoc" : [
+            "error", 
+            {
+                "require": {
+                    "FunctionDeclaration": false,
+                    "MethodDefinition": false,
+                    "ClassDeclaration": false,
+                    "ArrowFunctionExpression": false,
+                    "FunctionExpression": false
+                }
+            }
+        ],
+        "valid-jsdoc" : 0,
+        "no-console": 0,
+        "no-underscore-dangle": "off"
+    }
+}

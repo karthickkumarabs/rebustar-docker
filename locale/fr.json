@@ -1,0 +1,7 @@
+{
+	"success": "succès",
+	"created": "%s créé avec succès",
+	"updated": "%s Mis à jour avec succés",
+	"deleted": "%s Supprimé avec succès",
+	"GET_ADMIN_SUCCESS": "GET_ADMIN_SUCCESS"
+}

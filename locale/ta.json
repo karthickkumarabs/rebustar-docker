@@ -1,0 +1,10 @@
+{
+	"success": "வெற்றி",
+	"created": "%s வெற்றிகரமாக உருவாக்கப்பட்டது",
+	"updated": "%s வெற்றிகரமாக புதுப்பிக்கப்பட்டது",
+	"deleted": "%s வெற்றிகரமாக நீக்கப்பட்டது",
+	"GET_ADMIN_SUCCESS": "GET_ADMIN_SUCCESS",
+	"SUCCESS": "SUCCESS",
+	"FEEDBACK_ADDED_SUCCESSFULLY": "FEEDBACK_ADDED_SUCCESSFULLY",
+	"LISTED": "LISTED"
+}

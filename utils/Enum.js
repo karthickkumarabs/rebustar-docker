@@ -1,0 +1,216 @@
+/* ************************
+ * Copyright 2023
+ * ABSERVETECH
+ ************************ */
+const Enum = {
+  MODULES: {
+    DAILY: 'DAILY',
+    RENTAL: 'RENTAL',
+    OUTSTATION: 'OUTSTATION',
+    DAILY_MULTISTOP: 'DAILY-MULTISTOP',
+    HAILRIDE: 'HAILRIDE'
+  },
+  ROLES: {
+    ADMIN: 'ADMIN',
+    CUSTOMER: 'CUSTOMER',
+    PARTNER: 'PARTNER',
+    COMPANY: 'COMPANY'
+  },
+  VERIFICATION: {
+    LOGIN: 'LOGIN',
+    REGISTRATION: 'REGISTRATION',
+    CHANGEPASSWORD: 'CHANGEPASSWORD',
+    FORGETPASSWORD: 'FORGETPASSWORD'
+  },
+  NOTIFICATION: {
+    TYPE: {
+      PUSHNOTIFICATION: 'PUSHNOTIFICATION',
+      INACCOUNT: 'INACCOUNT',
+      MAIL: 'MAIL',
+      SMS: 'SMS'
+    },
+    SEVERITY: {
+      INFO: 'INFO',
+      WARNING: 'WARNING',
+      DANGER: 'DANGER'
+    },
+    STATUS: {
+      SUCCESS: 'SUCCESS',
+      FAILURE: 'FAILURE'
+    }
+  },
+  SOCKET: {
+    SERVICE: 'SERVICE',
+    REQUEST: 'REQUEST',
+    CHAT: 'CHAT',
+    USER: 'USER',
+    LOCATION: 'LOCATION',
+    BIDDING: 'BIDDING'
+  },
+  BIDDING: {
+    BIDDINGTRANSACTIONSTATUS: {
+      PENDING: 'PENDING',
+      ACCEPTED: 'ACCEPTED',
+      REJECTED: 'REJECTED'
+    },
+    BIDDINGSTATUS: {
+      OPEN: 'OPEN',
+      CLOSE: 'CLOSE'
+    }
+  },
+  ERROR: {
+    SOMETHING_WENT_WRONG: 'SOMETHING_WENT_WRONG',
+    UNAUTHORIZED: 'UNAUTHORIZED',
+    LOGICAL_ERROR: 'LOGICAL_ERROR'
+  },
+  PACKAGE: {
+    TYPE: {
+      SUBSCRIPTION: 'SUBSCRIPTION',
+      TOPUP: 'TOPUP'
+    },
+    STATUS: {
+      PENDING: 'PENDING',
+      ACTIVE: 'ACTIVE',
+      INACTIVE: 'INACTIVE'
+    }
+  },
+  PAYMENT: {
+    MODULES: {
+      TRIP: 'TRIP',
+      PAYOUT: 'PAYOUT',
+      SUBSCRIPTION: 'SUBSCRIPTION',
+      ADJUSTMENT: 'ADJUSTMENT',
+      REFUND: 'REFUND',
+      WALLET: 'WALLET',
+      REFERRAL: 'REFERRAL',
+      CANCEL: 'CANCEL',
+      SIGNUP_BONUS: 'SIGNUP_BONUS'
+    },
+    STATUS: {
+      PENDING: 'PENDING',
+      ACCEPTED: 'ACCEPTED',
+      REFUNDED: 'REFUNDED',
+      APPROVED: 'APPROVED',
+      REJECTED: 'REJECTED'
+    },
+    MODE: {
+      CREDIT: 'CREDIT',
+      DEBIT: 'DEBIT'
+    }
+  },
+  TRIP: {
+    REQUEST_FROM: {
+      ANDROID: 'ANDROID',
+      IOS: 'IOS',
+      WEB: 'WEB',
+      ADMIN: 'ADMIN'
+    },
+    STATUS: {
+      PROCESSING: 'Processing',
+      ACCEPTED: 'Accepted',
+      ARRIVED: 'Arrived',
+      PROGRESS: 'Progress',
+      FINISHED: 'Finished',
+      CANCELLED: 'Cancelled',
+      NORESPONSE: 'Noresponse',
+      REQUESTED: 'Requested',
+
+      ASSIGNED: 'Assigned',
+      CALLED: 'Called',
+      DECLINED: 'Declined',
+      HOLD: 'Hold'
+    },
+    PAYMENT_MODE: {
+      CASH: 'CASH',
+      CARD: 'CARD',
+      WALLET: 'WALLET'
+    },
+    PAYMENT_STATUS: {
+      PAID: 'PAID',
+      UNPAID: 'UNPAID'
+    },
+    DISTANCEMETRIC: {
+      METER: 'METER',
+      KILOMETER: 'KILOMETER',
+      MILE: 'MILE'
+    },
+    TIMEMETRIC: {
+      SECOND: 'SECOND',
+      MNIUTE: 'MINUTE',
+      HOUR: 'HOUR'
+    },
+    TRANSACTIONDESCRIPTION: {
+      TRIPTRANSACTION: 'TRIPTRANSACTION'
+    },
+    ASSIGNMENT_TYPE: {
+      AUTO: 'AUTO',
+      MANUAL: 'MANUAL'
+    }
+  },
+  OUTSTATION: {
+    TRIP_TYPE: {
+      ONEWAY: 'oneway',
+      ROUND: 'round'
+    }
+  },
+  REFERRALTYPES: {
+    BYUSING: 'BYUSING',
+    BYREFERRED: 'BYREFERRED'
+  },
+  SHARETRIP: {
+    STATUS: {
+      PENDING: 'pending',
+      ACCEPTED: 'Accepted',
+      ARRIVED: 'Arrived',
+      PROGRESS: 'Progress',
+      FINISHED: 'Finished',
+      CANCELLED: 'Cancelled',
+      NORESPONSE: 'Noresponse',
+
+      DECLINED: 'Declined',
+      HOLD: 'Hold'
+    }
+  },
+  DOCUMENT: {
+    MODULE: {
+      STATIC: 'Static',
+      DYNAMIC: 'Dynamic'
+    },
+    TYPE: {
+      PARTNER: 'Partner',
+      VEHICLE: 'Vehicle',
+      DEFAULT: ''
+    },
+    FILETYPE: {
+      TEXT: 'text',
+      IMAGE: 'image',
+      DATE: 'date',
+      DEFAULT: ''
+    }
+  },
+  SETTINGS: {
+    GENERALSETTING: 'GENERALSETTING',
+    FIREBASESETTING: 'FIREBASESETTING',
+    EMAILGATEWAY: 'EMAILGATEWAY',
+    SMSGATEWAY: 'SMSGATEWAY',
+    PAYMENTGATEWAY: 'PAYMENTGATEWAY',
+    DBBACKUP: 'DBBACKUP',
+    EMAILTEMPLATE: 'EMAILTEMPLATE',
+    REFERRALSETTING: 'REFERRALSETTING',
+    SIGNUPSETTING: 'SIGNUPSETTING',
+    CANCELLATIONSETTING: 'CANCELLATIONSETTING',
+    BIDDINGSETTING: 'BIDDINGSETTING',
+    BOOKINGFOROTHERS: 'BOOKINGFOROTHERS',
+    THEMESETTING: 'THEMESETTING',
+    MULTISTOPSETTING: 'MULTISTOPSETTING',
+    DOCUMENTSETTINGS: 'DOCUMENTSETTINGS',
+    SERVICECONFIGURATION: 'SERVICECONFIGURATION',
+    PARTNERSOUNDQRSHOWSETTINGS: 'PARTNERSOUNDQRSHOWSETTINGS',
+    OTPSETTING: 'OTPSETTING',
+    SUBSCRIPTIONSETTING: 'SUBSCRIPTIONSETTING',
+    HAILTRIPSETTINGS: 'HAILTRIPSETTINGS',
+    DRIVINGTIMERESTRICTION: 'DRIVINGTIMERESTRICTION'
+  }
+}
+
+export { Enum }

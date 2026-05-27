@@ -1,0 +1,33 @@
+services:
+
+  api:
+
+    build: .
+
+    container_name: rebustar-api
+
+    ports:
+      - "4015:4015"
+
+    depends_on:
+      - mongodb
+      - redis
+
+  mongodb:
+
+    image: mongo
+
+    container_name: rebustar-mongodb
+
+    # ports:
+    #   - "27017:27017"
+
+
+  redis:
+
+    image: redis
+
+    container_name: rebustar-redis
+
+    ports:
+      - "6379:6379"
